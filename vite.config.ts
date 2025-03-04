@@ -8,6 +8,11 @@ import dotenv from "dotenv"
 import nitro from "./nitro.config"
 import { projectDir } from "./shared/dir"
 import pwa from "./pwa.config"
+export default {
+  build: {
+    outDir: 'dist/output/public'
+  }
+}
 
 dotenv.config({
   path: join(projectDir, ".env.server"),
